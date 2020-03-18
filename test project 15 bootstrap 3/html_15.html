@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maket number 15 with bootstrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="wow/animate.css">
+	<link rel="stylesheet" href="fonts/fonts_15.css">
+	<link rel="stylesheet" href="css_15.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header body__header" id="home">
+		<nav class="navbar navbar-default">
+		  	<div class="container">
+		    	<div class="navbar-header">
+		     		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+		      		</button>
+		      		<a class="navbar-brand" href="#">
+						<img src="img/logo.png" alt="Logo">
+		      		</a>
+		    	</div>
+
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav navbar-right">
+		       			<li class="nav__elem"><a href="#home" class="nav__link">HOME</a></li>
+						<li class="nav__elem"><a href="#about" class="nav__link">ABOUT US</a></li>
+						<li class="nav__elem"><a href="#services" class="nav__link">SERVICES</a></li>
+						<li class="nav__elem"><a href="#works" class="nav__link">OUR WORKS</a></li>
+						<li class="nav__elem"><a href="#contact" class="nav__link">CONTACT</a></li>
+		      		</ul>
+		    	</div>
+		  	</div>
+		</nav>
+		<div class="container">
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  			<div class="modal-dialog" role="document">
+	    			<div class="modal-content">
+	      				<div class="modal-header">
+	        				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        				<h4 class="modal-title message__title" id="myModalLabel">HIRE <span class="message__orang">US</span></h4>
+	        				<div class="message__postitle">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+	      				</div>
+	      				<div class="modal-body">
+	       				 	<form class="message__form">
+								<input type="text" name="email" class="message__input" placeholder="Your Email">
+								<input type="text" class="message__input" placeholder="Subject">
+								<textarea name="" id="" cols="30" rows="10" class="message__area" placeholder="Your Message"></textarea>
+								<button class="button-main message__button" type="submit">SEND MESSAGE</button>
+							</form>
+	      				</div>
+	     				 <div class="modal-footer">
+
+	      				</div>
+	    			</div>
+	 			 </div>
+			</div>
+		</div>
+		<div class="top" id="top"> 
+			 <span class="top__arrow"></span>
+		</div> 
+	</header>
+	<main>
+		<div class="window-up window-up_no-active" id="windowUp">
+			
+		</div>
+		<section class="general main__general">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 wow fadeInDownBig">
+						<h1 class="general__title">WE DESIGN <span class="general__orang">THINGS</span></h1>
+						<div class="general__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+						<div class="general__buttons">
+							<button class="button-main button_message" data-toggle="modal" data-target="#myModal">HIRE US</button>
+							<button class="button-main" id="get_works">OUR WORKS</button>
+						</div>
+						<div class="general__scroll-down" id="getTeam"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about main__about" id="services">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 wow fadeInLeftBig">
+						<div class="about__img"><img src="img/about_1.png" alt="" class="about__icon"></div>
+						<div class="about__pretitle">PRINT DESIGN</div>
+						<div class="about__discription">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia </div>
+					</div>
+					<div class="col-lg-3 col-sm-6 wow fadeInLeftBig">
+						<div class="about__img"><img src="img/about_2.png" alt="" class="about__icon"></div>
+						<div class="about__pretitle">WEB DESIGN</div>
+						<div class="about__discription">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+					</div>
+					<div class="col-lg-3 col-sm-6 wow fadeInRightBig">
+						<div class="about__img"><img src="img/about_3.png" alt="" class="about__icon"></div>
+						<div class="about__pretitle">APP DESIGN</div>
+						<div class="about__discription">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </div>
+					</div>
+					<div class="col-lg-3 col-sm-6 wow fadeInRightBig">
+						<div class="about__img"><img src="img/about_4.png" alt="" class="about__icon"></div>
+						<div class="about__pretitle">LOGO DESIGN</div>
+						<div class="about__discription">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="letter">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<form action="" class="letter__form wow fadeInDownBig">
+							<input type="text" name="email" class="letter__input" placeholder="Enter Your email adress for newsletter">
+							<button class="button-main letter__button" type="submit">SUBSCRIBE</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="works wow fadeInUpBig" id="works">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="works__title">OUR <span class="works__orang">WORKS</span></h2>
+						<div class="works__postitle">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-sm-6">
+						<div class="works__card">
+							<img src="img/work_1.jpg" alt="" class="works__image">
+							<div class="works__card-hover">
+								<div class="works__name">ABAZOO WEBSITE</div>
+								<div class="works__description">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+								<button class="button-main works__button-card">SHOW PROJECT</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="works__card">
+							<img src="img/work_2.jpg" alt="" class="works__image">
+							<div class="works__card-hover">
+								<div class="works__name">ABAZOO WEBSITE</div>
+								<div class="works__description">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+								<button class="button-main works__button-card">SHOW PROJECT</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="works__card works__mobile-none">
+							<img src="img/work_3.jpg" alt="" class="works__image">
+							<div class="works__card-hover">
+								<div class="works__name">ABAZOO WEBSITE</div>
+								<div class="works__description">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+								<button class="button-main works__button-card">SHOW PROJECT</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="works__card works__mobile-none">
+							<img src="img/work_4.jpg" alt="" class="works__image">
+							<div class="works__card-hover">
+								<div class="works__name">ABAZOO WEBSITE</div>
+								<div class="works__description">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+								<button class="button-main works__button-card">SHOW PROJECT</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="works__card works__mobile-none">
+							<img src="img/work_5.jpg" alt="" class="works__image">
+							<div class="works__card-hover">
+								<div class="works__name">ABAZOO WEBSITE</div>
+								<div class="works__description">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+								<button class="button-main works__button-card">SHOW PROJECT</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="works__card works__mobile-none">
+							<img src="img/work_6.jpg" alt="" class="works__image">
+							<div class="works__card-hover">
+								<div class="works__name">ABAZOO WEBSITE</div>
+								<div class="works__description">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+								<button class="button-main works__button-card">SHOW PROJECT</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="works__card works__card_no-active works__mobile-none">
+							<img src="img/work_7.jpg" alt="" class="works__image">
+							<div class="works__card-hover">
+								<div class="works__name">ABAZOO WEBSITE</div>
+								<div class="works__description">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+								<button class="button-main works__button-card">SHOW PROJECT</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="works__card works__card_no-active works__mobile-none">
+							<img src="img/work_8.jpg" alt="" class="works__image">
+							<div class="works__card-hover">
+								<div class="works__name">ABAZOO WEBSITE</div>
+								<div class="works__description">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+								<button class="button-main works__button-card">SHOW PROJECT</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 works__card works__card_no-active works__mobile-none">
+						<div class="works__card works__card_no-active works__mobile-none">
+							<img src="img/work_9.jpg" alt="" class="works__image">
+							<div class="works__card-hover">
+								<div class="works__name">ABAZOO WEBSITE</div>
+								<div class="works__description">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+								<button class="button-main works__button-card">SHOW PROJECT</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="button-main works__button-show">SHOW MORE</button>
+			</div>
+		</section>
+		<section class="comments main__comments wow fadeInLeftBig" id="comments">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner" role="listbox">
+							    <div class="item active">
+							    	<img src="img/comments_photo.png" alt="" class="comments__icon">
+									<div class="comments__text">These guys are incredible! I get my project in 10 days and it was awesome!
+									Very good service! Highly recommended!</div>
+									<div class="comments__name">John Smith_1</div>
+							    </div>
+							    <div class="item">
+							      	<img src="img/comments_photo.png" alt="" class="comments__icon">
+									<div class="comments__text">These guys are incredible! I get my project in 10 days and it was awesome!
+									Very good service! Highly recommended!</div>
+									<div class="comments__name">John Smith_2</div>
+							    </div>
+							    <div class="item">
+							      	<img src="img/comments_photo.png" alt="" class="comments__icon">
+									<div class="comments__text">These guys are incredible! I get my project in 10 days and it was awesome!
+									Very good service! Highly recommended!</div>
+									<div class="comments__name">John Smith_3</div>
+							    </div>
+							</div>
+							<a class="left carousel-control comments__arrow-left" href="#carousel-example-generic" role="button" data-slide="prev">
+							</a>
+							<a class="right carousel-control comments__arrow-right" href="#carousel-example-generic" role="button" data-slide="next">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="team main__team wow fadeInRightBig" id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="team__title">OUR <span class="team__orang">TEAM</span></h2>
+						<div class="team__postitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						
+					</div>
+				</div>
+				<!--<div class="team__slider">-->
+				<div class="row">
+					<div class="col-lg-12">
+						<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+							    <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+							    <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+							    <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<div class="row">
+										<div class="col-lg-3 col-sm-6">
+											<div class="team__card">
+												<div class="team__photo">
+													<img src="img/team_1.jpg" alt="" class="team__img">
+												</div>
+												<div class="team__name">Catherina Gail</div>
+												<div class="team__social">
+													<img src="img/soc1.png" alt="" class="team__icon-soc">
+													<img src="img/soc2.png" alt="" class="team__icon-soc">
+													<img src="img/soc3.png" alt="" class="team__icon-soc">
+												</div>
+												<div class="team__description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-sm-6">
+											<div class="team__card">
+												<div class="team__photo">
+													<img src="img/team_2.jpg" alt="" class="team__img">
+												</div>
+												<div class="team__name">Harvey Rube</div>
+												<div class="team__social">
+													<img src="img/soc1.png" alt="" class="team__icon-soc">
+													<img src="img/soc2.png" alt="" class="team__icon-soc">
+													<img src="img/soc3.png" alt="" class="team__icon-soc">
+												</div>
+												<div class="team__description">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-sm-6">
+											<div class="team__card">
+												<div class="team__photo">
+													<img src="img/team_3.jpg" alt="" class="team__img">
+												</div>
+												<div class="team__name">Janet Pris</div>
+												<div class="team__social">
+													<img src="img/soc1.png" alt="" class="team__icon-soc">
+													<img src="img/soc2.png" alt="" class="team__icon-soc">
+													<img src="img/soc3.png" alt="" class="team__icon-soc">
+												</div>
+												<div class="team__description">Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-sm-6">
+											<div class="team__card">
+												<div class="team__photo">
+													<img src="img/team_4.jpg" alt="" class="team__img">
+												</div>
+												<div class="team__name">Kevin Ward</div>
+												<div class="team__social">
+													<img src="img/soc1.png" alt="" class="team__icon-soc">
+													<img src="img/soc2.png" alt="" class="team__icon-soc">
+													<img src="img/soc3.png" alt="" class="team__icon-soc">
+												</div>
+												<div class="team__description">Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="team__card col-lg-3 col-sm-6">
+											<div class="team__photo">
+												<img src="img/team_5.jpg" alt="" class="team__img">
+											</div>
+											<div class="team__name">Catherina Gail</div>
+											<div class="team__social">
+												<img src="img/soc1.png" alt="" class="team__icon-soc">
+												<img src="img/soc2.png" alt="" class="team__icon-soc">
+												<img src="img/soc3.png" alt="" class="team__icon-soc">
+											</div>
+											<div class="team__description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </div>
+										</div>
+										<div class="team__card col-lg-3 col-sm-6">
+											<div class="team__photo">
+												<img src="img/team_6.jpg" alt="" class="team__img">
+											</div>
+											<div class="team__name">Harvey Rube</div>
+											<div class="team__social">
+												<img src="img/soc1.png" alt="" class="team__icon-soc">
+												<img src="img/soc2.png" alt="" class="team__icon-soc">
+												<img src="img/soc3.png" alt="" class="team__icon-soc">
+											</div>
+											<div class="team__description">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </div>
+										</div>
+										<div class="team__card col-lg-3 col-sm-6">
+											<div class="team__photo">
+												<img src="img/team_7.jpg" alt="" class="team__img">
+											</div>
+											<div class="team__name">Janet Pris</div>
+											<div class="team__social">
+												<img src="img/soc1.png" alt="" class="team__icon-soc">
+												<img src="img/soc2.png" alt="" class="team__icon-soc">
+												<img src="img/soc3.png" alt="" class="team__icon-soc">
+											</div>
+											<div class="team__description">Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </div>
+										</div>
+										<div class="team__card col-lg-3 col-sm-6">
+											<div class="team__photo">
+												<img src="img/team_8.jpg" alt="" class="team__img">
+											</div>
+											<div class="team__name">Kevin Ward</div>
+											<div class="team__social">
+												<img src="img/soc1.png" alt="" class="team__icon-soc">
+												<img src="img/soc2.png" alt="" class="team__icon-soc">
+												<img src="img/soc3.png" alt="" class="team__icon-soc">
+											</div>
+											<div class="team__description">Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="team__card col-lg-3 col-sm-6">
+											<div class="team__photo">
+												<img src="img/team_9.jpg" alt="" class="team__img">
+											</div>
+											<div class="team__name">Catherina Gail</div>
+											<div class="team__social">
+												<img src="img/soc1.png" alt="" class="team__icon-soc">
+												<img src="img/soc2.png" alt="" class="team__icon-soc">
+												<img src="img/soc3.png" alt="" class="team__icon-soc">
+											</div>
+											<div class="team__description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </div>
+										</div>
+										<div class="team__card col-lg-3 col-sm-6">
+											<div class="team__photo">
+												<img src="img/team_10.jpg" alt="" class="team__img">
+											</div>
+											<div class="team__name">Harvey Rube</div>
+											<div class="team__social">
+												<img src="img/soc1.png" alt="" class="team__icon-soc">
+												<img src="img/soc2.png" alt="" class="team__icon-soc">
+												<img src="img/soc3.png" alt="" class="team__icon-soc">
+											</div>
+											<div class="team__description">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </div>
+										</div>
+										<div class="team__card col-lg-3 col-sm-6">
+											<div class="team__photo">
+												<img src="img/team_11.jpg" alt="" class="team__img">
+											</div>
+											<div class="team__name">Janet Pris</div>
+											<div class="team__social">
+												<img src="img/soc1.png" alt="" class="team__icon-soc">
+												<img src="img/soc2.png" alt="" class="team__icon-soc">
+												<img src="img/soc3.png" alt="" class="team__icon-soc">
+											</div>
+											<div class="team__description">Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </div>
+										</div>
+										<div class="team__card col-lg-3 col-sm-6">
+											<div class="team__photo">
+												<img src="img/team_12.jpg" alt="" class="team__img">
+											</div>
+											<div class="team__name">Kevin Ward</div>
+											<div class="team__social">
+												<img src="img/soc1.png" alt="" class="team__icon-soc">
+												<img src="img/soc2.png" alt="" class="team__icon-soc">
+												<img src="img/soc3.png" alt="" class="team__icon-soc">
+											</div>
+											<div class="team__description">Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contact main__contact wow flipInY" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="contact__title">SAY <span class="contact__orang">HELLO</span></h2>
+						<div class="contact__postitle">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+					</div>
+				</div>
+				<form action="" class="contact__form">
+					<div class="row">
+						<div class="col-md-4 col-sm-5 col-md-offset-2 col-sm-offset-1">
+							<input type="text" class="contact__input form-control" name="email" placeholder="Your Email">
+						</div>
+						<div class="col-md-4 col-sm-5">
+							<input type="text" class="contact__input form-control" placeholder="Subject">
+						</div>
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+							<textarea name="" id="" cols="30" rows="10" class="contact__area" placeholder="Your Message"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-5 col-md-offset-2 col-sm-offset-1 col-xs-12">
+							<button class="button-main contact__button" type="submit">HIRE US</button>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12">
+							<div class="social contact__social">
+								<a href="#" class="social__social-link"><img src="img/social_1.png" alt="" class="social__icon"></a>
+								<a href="#" class="social__social-link"><img src="img/social_2.png" alt="" class="social__icon"></a>
+								<a href="#" class="social__social-link"><img src="img/social_3.png" alt="" class="social__icon"></a>
+								<a href="#" class="social__social-link"><img src="img/social_4.png" alt="" class="social__icon"></a>
+								<a href="#" class="social__social-link"><img src="img/social_5.png" alt="" class="social__icon"></a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<ul class="footer__content">
+				<li class="footer__elem">
+					<a href="#" class="footer__studio">© 2015 COPYRIGHT DESIGN STUDIO</a>
+				</li>
+				<li class="li__elem">
+					<a href="#" class="footer__autor">DESIGNED BY <span class="footer__strong">SYMU<span class="footer__red">.</span></span>CO</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="js_15.js"></script>
+	<script src="wow/wow.min.js"></script>
+	<script>
+        new WOW().init();
+  	</script>
+</body>
+</html>
