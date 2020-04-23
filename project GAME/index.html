@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Test nomber 1</title>
+   <title>Подруби</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -10,44 +10,45 @@
    <link href="fonts/font.css" rel="stylesheet" type="text/css">
    <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body id="body">
 	<div class="modal">
-		<div class="container">
-			<div class="modal__window">
-				<div class="modal__close"></div>
-				<div class="modal__content">
-					<div class="modal__title">
-						Контакты
-					</div>
-					<div class="modal__offer">
-						Если вы хотите предложить нам рекламу или сотрудничество, то по всем предложениям писать на почту <a href="info@podrubi.ru" class="modal__link">info@podrubi.ru</a>
-					</div>
-					<div class="modal__text">
-						Если у вас какие то технические проблемы, или не прошел платеж , то пишите пожалуйста в тех поддержку внутри сайта, там вам дадут ответ специалисты в кратчайший срок.
-					</div>
+		<div class="modal__window">
+			<div class="modal__close"></div>
+			<div class="modal__content">
+				<div class="modal__title">
+					Контакты
+				</div>
+				<div class="modal__offer">
+					Если вы хотите предложить нам рекламу или сотрудничество, то по всем предложениям писать на почту <a href="info@podrubi.ru" class="modal__link">info@podrubi.ru</a>
+				</div>
+				<div class="modal__text">
+					Если у вас какие то технические проблемы, или не прошел платеж , то пишите пожалуйста в тех поддержку внутри сайта, там вам дадут ответ специалисты в кратчайший срок.
 				</div>
 			</div>
 		</div>
 	</div>
-    <header class="header">
-    	<div class="container">
+	<div class="body__button-shop">
+		<a href="#" class="body__link-shop">Перейти в наш магазин</a>
+	</div>
+    <header class="header" id="header">
+    	<div class="container modal__container">
     		<div class="header__logo">
     			<a href="#" class="header__logo-link"><img src="img/logo.svg" alt="подруби" class="header__logo-img"></a>
     			<div class="header__logo-text">игровой софт</div>
+    			<div class="burger">
+	    			<span class="burger__line"></span>
+	    		</div>
     		</div>
     		<div class="header__nav-line">
 	    		<nav class="nav">
 	    			<ul class="nav__list">
-	    				<li class="nav__elem"><a href="#" class="nav__link">главная</a></li>
-	    				<li class="nav__elem"><a href="#" class="nav__link">гарантия</a></li>
-	    				<li class="nav__elem"><a href="#" class="nav__link">новый подход к софту</a></li>
-	    				<li class="nav__elem"><a href="#" class="nav__link">доступный софт</a></li>
+	    				<li class="nav__elem"><a href="#header" class="nav__link" id="get_header">главная</a></li>
+	    				<li class="nav__elem"><a href="#" class="nav__link" id="get_license">гарантия</a></li>
+	    				<li class="nav__elem"><a href="#" class="nav__link" id="get_cheat">новый подход к софту</a></li>
+	    				<li class="nav__elem"><a href="#" class="nav__link" id="get_apex">доступный софт</a></li>
 	    				<li class="nav__elem"><a href="#" class="nav__link">поддержка</a></li>
 	    			</ul>
 	    		</nav>
-	    		<div class="burger">
-	    			<span class="burger__line"></span>
-	    		</div>
 	    		<div class="header__buttons">
 	    			<button class="header__button-shop button">перейти в магазин</button>
 	    			<button class="header__button-download button">Скачать лаунчер</button>
@@ -69,32 +70,6 @@
 			    				</div>
 			    			</div>
 			    		</div>
-			    		<div class="slider-main__wrapper">
-			    			<div class="slider-main__slide">
-			    				<h1 class="slider-main__title">
-			    					Самоизолируйся с подрубом
-			    				</h1>
-			    				<div class="slider-main__description">
-			    					Скидка 15% для всех наших клиентов на любые типы подписок
-			    				</div>
-			    				<div class="slider-main__tag">
-			    					#лучшедома
-			    				</div>
-			    			</div>
-			    		</div>
-			    		<div class="slider-main__wrapper">
-			    			<div class="slider-main__slide">
-			    				<h1 class="slider-main__title">
-			    					Самоизолируйся с подрубом
-			    				</h1>
-			    				<div class="slider-main__description">
-			    					Скидка 15% для всех наших клиентов на любые типы подписок
-			    				</div>
-			    				<div class="slider-main__tag">
-			    					#лучшедома
-			    				</div>
-			    			</div>
-			    		</div>
 	    			</div>
 	    		</div>
     			<div class="header__window-help">
@@ -107,7 +82,7 @@
     	</div>
     </header>
     <main class="main">
-    	<section class="money">
+    	<section class="money" id="money">
     		<div class="container money__container">
 	    		<div class="roll-games">
 	    			<div class="roll-games__top">
@@ -209,11 +184,8 @@
 		    				</div>
 		    			</div>
 	    			</div>
-	    			<div class="money__button">
-	    				<a href="#" class="money__link">Перейти в наш магазин</a>
-	    			</div>
 	    		</div>
-	    		<div class="license">
+	    		<div class="license" id="license">
 	    			<div class="license__title">
 	    				Почему нам стоит доверять?
 	    			</div>
@@ -275,7 +247,7 @@
     		</div>
     	</section>
     	<section class="substrat">
-    		<section class="cheat substrat-block">
+    		<section class="cheat substrat-block" id="cheat">
     			<div class="cheat__content">
 	    			<div class="cheat__title">
 	    				Новый подход к софту 
@@ -301,7 +273,7 @@
 	    			</div>
 	    		</div>
     		</section>
-    		<section class="apex substrat-block">
+    		<section class="apex substrat-block" id="apex">
     			<div class="apex__left">
     				<div class="apex__title">
     					<span class="apex__title_upper">APEX</span>
